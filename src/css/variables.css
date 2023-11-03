@@ -1,0 +1,15 @@
+:root {
+	--white: #fff;
+	--black: #171718;
+	--purple: #5c62ec;
+	--black-border: #26292D;
+	--text-color: var(--black);
+
+	--page-bg: var(--white);
+	--text-color: var(--black);
+}
+
+.dark-mode {
+	--page-bg: #252526;
+	--text-color: var(--white);
+}

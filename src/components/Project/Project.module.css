@@ -1,0 +1,70 @@
+.project__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 865px;
+	margin: auto;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 60px;
+	letter-spacing: -0.5px;
+	line-height: 1.3;
+	color: var(--purple);
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.img {
+	max-width: 100%;
+	margin-bottom: 40px;
+	box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+}
+
+.skills {
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: -0.5px;
+	margin-bottom: 30px;
+	line-height: 1.3;
+	text-align: center;
+}
+
+.gitHub__Link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 12px 20px;
+	column-gap: 10px;
+
+	height: 50px;
+
+	border: 1px solid var(--text-color);
+	border-radius: 5px;
+
+	letter-spacing: 0.15px;
+	font-weight: 500;
+	transition: all 0.5s ease;
+}
+
+.gitHub__Link:hover {
+	background: rgba(92, 98, 236, 0.7);
+
+}
+
+
+
+@media (max-width: 620px) {
+	.title {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+
+	.skills {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+}

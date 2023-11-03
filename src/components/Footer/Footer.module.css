@@ -1,0 +1,41 @@
+.footer__container {
+	background-color: var(--black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	flex-direction: column;
+	color: var(--white);
+	gap: 30px;
+	margin-top: auto;
+}
+
+.footer__text {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.social__list {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.social__item {
+	cursor: pointer;
+}
+
+@media (max-width:620px) {
+	.footer__container {
+		height: 150px;
+	}
+
+	.social__item {
+		width: 28px;
+	}
+
+	.social__list {
+		gap: 20px;
+	}
+}
