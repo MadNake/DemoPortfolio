@@ -24,8 +24,8 @@ const DarkModeBtn = () => {
 
 	return (
 		<button id="bt" ref={btnRef} onClick={changeDarkMode} className={s.darkModeButton}>
-			<img src="./sun.svg" alt="Light Mode" className={s.darkModeButton__icon} />
-			<img src="./moon.svg" alt="Dark Mode" className={s.darkModeButton__icon} />
+			<img src="/./sun.svg" alt="Light Mode" className={s.darkModeButton__icon} />
+			<img src="/./moon.svg" alt="Dark Mode" className={s.darkModeButton__icon} />
 		</button>
 	)
 }

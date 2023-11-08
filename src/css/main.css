@@ -37,11 +37,14 @@ a {
 .container {
 	margin: 0 auto;
 	max-width: 1200px;
-	padding: 0 15px;
+	padding: 70px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
 main {
-	padding: 70px 0;
 	background-color: var(--page-bg);
 }
 

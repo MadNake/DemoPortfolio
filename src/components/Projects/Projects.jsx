@@ -13,13 +13,15 @@ const Projects = () => {
 	]
 
 	return (
-		<section className={s.projects__container}>
+		<section className="container">
+			<div className={s.projects__container}>
 			<h2 className={s.title}>Projects</h2>
 			<ul className={s.projects__list}>
 			{projects.map(p => (
 				<ProjectsItem key={p.id} title={p.title} img={p.img} id={p.id}/>
 			))}
 			</ul>
+			</div>
 		</section>
 	)
 }

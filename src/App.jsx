@@ -1,26 +1,25 @@
+import { Routes, Route } from "react-router-dom"
+
 import Contacts from "./components/Contacts/Contacts"
 import Footer from "./components/Footer/Footer"
-import Header from "./components/Header/Header"
 import Navigate from "./components/Navigate/Navigate"
 import Project from "./components/Project/Project"
-import Projects from "./components/Projects/Projects"
 import Skills from "./components/Skills/Skills"
+import Home from "./components/Home/Home"
+
 
 function App() {
-
-	const data = [
-		{ id: 0, title: "Video service", img: "./videoService.png", skills: "React, Node.js, MongoDB" }
-	]
 
 	return (
 		<div className={`app-wrapper`}>
 			<Navigate />
-			<Header />
 			<main>
-				<Projects />
-				<Project {...data[0]} />
-				<Skills />
-				<Contacts />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/project/:id" element={<Project />} />
+					<Route path="/skills" element={<Skills />} />
+					<Route path="/contacts" element={<Contacts />} />
+				</Routes>
 			</main>
 			<Footer />
 		</div>
