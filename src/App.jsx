@@ -9,7 +9,7 @@ import Skills from "./components/Skills/Skills"
 function App() {
 
 	const data = [
-		{ id: 0, title: "Video service", img: "public/videoService.png", skills: "React, Node.js, MongoDB" }
+		{ id: 0, title: "Video service", img: "./videoService.png", skills: "React, Node.js, MongoDB" }
 	]
 
 	return (
