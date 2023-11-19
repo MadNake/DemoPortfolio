@@ -11,7 +11,7 @@ const Navigate = () => {
 	return (
 		<nav className={s.nav}>
 				<div className={s.nav__row}>
-					<NavLink to={"/"} className={s.logo}><strong>Freelancer</strong> portfolio</NavLink>
+					<NavLink to={"/"} className={s.logo}><strong>My</strong> portfolio</NavLink>
 					<ul className={s.nav__list}>
 						<li><NavLink className={isActive} to={"/"}>Projects</NavLink></li>
 						<li><NavLink className={isActive} to={"/skills"}>Skills</NavLink></li>
