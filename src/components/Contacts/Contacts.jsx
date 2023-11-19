@@ -11,7 +11,7 @@ const Contacts = () => {
 				</div>
 				<div className={s.block__wrapper}>
 					<h2 className={s.subtitle}>Telegram / WhatsApp</h2>
-					<p className={s.text}>+49 1341241525124</p>
+					<p className={s.text}>+49 176 56392564</p>
 				</div>
 				<div className={s.block__wrapper}>
 					<h2 className={s.subtitle}>Email</h2>

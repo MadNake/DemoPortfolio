@@ -16,7 +16,7 @@ const Project = () => {
 				<h2 className={s.title}>{project.title}</h2>
 				<img className={s.img} src={project.img} alt="project img" />
 				<p className={s.skills}>{`Skills: ${project.skills}`}</p>
-				<a className={s.gitHub__Link} href={`${project.href}`}>
+				<a target="blank" className={s.gitHub__Link} href={`${project.href}`}>
 					<img className={s.gitHub__icon} src="/./DemoPortfolio/gitHub_black.svg" alt="gitHub icon" />
 					GitHub repo
 				</a>
