@@ -13,7 +13,7 @@ const Header = () => {
 				<div className={s.header__text}>
 					<p>with passion for learning and creating.</p>
 				</div>
-				<button className="btn">Download CV</button>
+				<a className="btn" href="/./DemoPortfolio/Lebenslauf von Maksym Usalko.pdf" target="blank">Download CV</a>
 			</div>
 		</header>
 	)
