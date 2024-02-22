@@ -7,11 +7,15 @@ const Skills = () => {
 				<h2 className={s.title}>Skills</h2>
 				<div className={s.skill__wrapper}>
 					<h3 className={s.subtitle}>Frontend</h3>
-					<p className={s.text}>JavaScript, ReactJS, Redux, HTML, CSS, SCSS, NPM, GIT</p>
+					<p className={s.text}>JavaScript, TypeScript, ReactJS, Redux, HTML, CSS, SCSS, Tailwind, GIT</p>
 				</div>
 				<div className={s.skill__wrapper}>
 					<h3 className={s.subtitle}>Backend</h3>
 					<p className={s.text}>The list will continue to grow...</p>
+				</div>
+				<div className={s.skill__wrapper}>
+					<h3 className={s.subtitle}>Development tools</h3>
+					<p className={s.text}>ESLint, Prettier, Vite</p>
 				</div>
 			</div>
 		</section>

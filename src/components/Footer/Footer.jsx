@@ -10,7 +10,6 @@ const Footer = () => {
 				<li className={s.social__item}><a target="blank" href="https://github.com/MadNake"><img src="/./DemoPortfolio/gitHub.svg" alt="gitHub" /></a></li>
 				<li className={s.social__item}><a target="blank" href="https://www.linkedin.com/in/maksym-usalko-215342243/"><img src="/./DemoPortfolio/linkedIn.svg" alt="linkedIn" /></a></li>
 			</ul>
-			<p className={s.footer__text}>© 2022 frontend-dev.com</p>
 		</footer>
 	)
 }
