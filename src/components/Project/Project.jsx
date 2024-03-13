@@ -1,14 +1,16 @@
-import s from "./Project.module.css"
-import PropTypes from 'prop-types';
-import data from "../../helpers/projectsList"
+import s from "./Project.module.css";
+import PropTypes from "prop-types";
+import data from "../../db/projectsList";
 import { useParams } from "react-router-dom";
-
+import { useEffect } from "react";
 
 const Project = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
 
-
-	const { id } = useParams()
-	const project = data[id]
+	const { id } = useParams();
+	const project = data[id];
 
 	return (
 		<section className="container">
@@ -17,17 +19,29 @@ const Project = () => {
 				<img className={s.img} src={project.img} alt="project img" />
 				<p className={s.skills}>{`Skills: ${project.skills}`}</p>
 				<a target="blank" className={s.gitHub__Link} href={`${project.href}`}>
-					<img className={s.gitHub__icon} src="/./DemoPortfolio/gitHub_black.svg" alt="gitHub icon" />
-					GitHub page
+					<img
+						className={s.gitHub__icon}
+						src="/./DemoPortfolio/web-icon.svg"
+						alt="web icon"
+					/>
+					WEB-page
 				</a>
-				<a target="blank" className={s.gitHub__Link} href={`${project.gitHubSrc}`}>
-					<img className={s.gitHub__icon} src="/./DemoPortfolio/gitHub_black.svg" alt="gitHub icon" />
+				<a
+					target="blank"
+					className={s.gitHub__Link}
+					href={`${project.gitHubSrc}`}
+				>
+					<img
+						className={s.gitHub__icon}
+						src="/./DemoPortfolio/gitHub_black.svg"
+						alt="gitHub icon"
+					/>
 					GitHub repo
 				</a>
 			</div>
 		</section>
-	)
-}
+	);
+};
 
 Project.propTypes = {
 	title: PropTypes.string,
@@ -35,4 +49,4 @@ Project.propTypes = {
 	skills: PropTypes.string,
 };
 
-export default Project
+export default Project;

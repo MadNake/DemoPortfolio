@@ -18,9 +18,7 @@
 .projects__container {
 	background-color: var(--page-bg);
 	color: var(--text-color);
-
 }
-
 
 @media (max-width: 620px) {
 	.title {
